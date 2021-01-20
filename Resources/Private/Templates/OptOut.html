@@ -1,0 +1,16 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+    <div id="moo-optout-form" data-opted-out-text="<f:translate key='optedOut' extensionName='matomo_optout'/>" data-opted-in-text="<f:translate key='optedIn' extensionName='matomo_optout'/>">
+        <p><f:translate key="introduction" extensionName="matomo_optout"/></p>
+        <p>
+            <input type="checkbox" id="moo-optout">
+            <label for="moo-optout"><strong></strong></label>
+        </p>
+    </div>
+    <f:asset.script identifier="matomo_optout" src="EXT:matomo_optout/Resources/Public/JavaScript/matomo_optout.js"/>
+</f:section>
+
+</html>

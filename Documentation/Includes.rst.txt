@@ -1,0 +1,18 @@
+﻿.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. ==================================================
+.. DEFINE SOME TEXT ROLES
+.. --------------------------------------------------
+
+.. role:: html(code)
+.. role:: js(code)
+.. role:: php(code)
+.. role:: typoscript(code)
+
+.. role:: ts(typoscript)
+   :class: typoscript
+
+.. highlight:: typoscript

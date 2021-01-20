@@ -1,0 +1,7 @@
+tt_content.matomo_optout =< lib.contentElement
+tt_content.matomo_optout {
+  templateName = OptOut
+  templateRootPaths {
+    0 = EXT:matomo_optout/Resources/Private/Templates/
+  }
+}

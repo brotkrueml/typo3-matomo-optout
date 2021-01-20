@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:matomo_optout/Resources/Private/Language/locallang.xlf" date="2021-01-25T10:08:12Z">
+		<body>
+			<trans-unit id="introduction" resname="introduction">
+				<source><![CDATA[You may choose to prevent this website from aggregating and analyzing the actions you take here. Doing so will protect your privacy, but will also prevent the owner from learning from your actions and creating a better experience for you and other users.]]></source>
+			</trans-unit>
+			<trans-unit id="optedIn" resname="optedIn">
+				<source><![CDATA[You are not opted out. Uncheck this box to opt-out.]]></source>
+			</trans-unit>
+			<trans-unit id="optedOut" resname="optedOut">
+				<source><![CDATA[You are currently opted out. Check this box to opt-in.]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

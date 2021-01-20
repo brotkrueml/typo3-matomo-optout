@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+    special {
+        elements {
+            matomo_optout {
+                iconIdentifier = ext-matomo_optout-ce
+                title = LLL:EXT:matomo_optout/Resources/Private/Language/ContentElement.xlf:title
+                description = LLL:EXT:matomo_optout/Resources/Private/Language/ContentElement.xlf:description
+                tt_content_defValues {
+                    CType = matomo_optout
+                }
+            }
+        }
+
+        show := addToList(matomo_optout)
+    }
+}
