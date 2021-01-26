@@ -49,6 +49,7 @@
         }
     },
 	"scripts": {
+		"build-js": "Build/node_modules/.bin/uglifyjs --compress --mangle --output Resources/Public/JavaScript/matomo_optout.js Resources/Private/JavaScript/matomo_optout.js",
 		"fix-cs": ".Build/bin/php-cs-fixer fix",
 		"zip": "grep -Po \"(?<='version' => ')([0-9]+\\.[0-9]+\\.[0-9]+)\" ext_emconf.php | xargs -I {version} sh -c 'mkdir -p ../zip; git archive -v -o \"../zip/${PWD##*/}_{version}.zip\" v{version}'"
 	}
