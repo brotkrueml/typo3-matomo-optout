@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:matomo_optout/Resources/Private/Language/ContentElement.xlf" date="2021-01-17T14:57:40Z">
+		<body>
+			<trans-unit id="title" resname="title">
+				<source><![CDATA[Matomo Opt-Out]]></source>
+				<target><![CDATA[Matomo Opt-Out]]></target>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source><![CDATA[Adds a Matomo opt-out element]]></source>
+				<target><![CDATA[Fügt ein Matomo Opt-Out-Element hinzu]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
