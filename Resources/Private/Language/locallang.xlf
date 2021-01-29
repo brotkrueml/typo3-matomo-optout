@@ -5,6 +5,9 @@
 			<trans-unit id="introduction" resname="introduction">
 				<source><![CDATA[You may choose to prevent this website from aggregating and analyzing the actions you take here. Doing so will protect your privacy, but will also prevent the owner from learning from your actions and creating a better experience for you and other users.]]></source>
 			</trans-unit>
+			<trans-unit id="noTracking" resname="noTracking">
+				<source><![CDATA[No tracking because of disabled JavaScript or activated ad blocker.]]></source>
+			</trans-unit>
 			<trans-unit id="optedIn" resname="optedIn">
 				<source><![CDATA[You are not opted out. Uncheck this box to opt-out.]]></source>
 			</trans-unit>

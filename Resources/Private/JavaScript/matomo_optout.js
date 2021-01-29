@@ -1,14 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('moo-optout-form');
-  if (!form) {
-    console.error('matomo_optout: moo-optout-form element not found!');
+  var noTracking = document.getElementById('moo-no-tracking');
+  if (!form || !noTracking) {
+    console.error('matomo_optout: element with id moo-optout-form element or moo-no-tracking not found!');
     return;
   }
 
   if (typeof _paq === 'undefined') {
-    form.style.fontWeight = 'bold';
-    form.style.color = '#f00';
-    form.innerText = 'Please add the Matomo tracking JavaScript to the website to display the Matomo opt-out form!';
+    noTracking.style.fontWeight = 'bold';
+    noTracking.style.color = '#f00';
+    noTracking.innerText = 'Please add the Matomo tracking JavaScript to the website to display the Matomo opt-out form!';
     return;
   }
 
@@ -21,15 +22,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function setOptOutText(element) {
-    _paq.push([function() {
+    _paq.push([function () {
       element.checked = !this.isUserOptedOut();
       form.querySelector('label[for="moo-optout"] strong').innerText = this.isUserOptedOut()
         ? optedOutText
         : optedInText;
+      noTracking.style.display = 'none';
+      form.style.removeProperty('display');
     }]);
   }
 
-  optOut.addEventListener('click', function() {
+  optOut.addEventListener('click', function () {
     if (this.checked) {
       _paq.push(['forgetUserOptOut']);
     } else {
