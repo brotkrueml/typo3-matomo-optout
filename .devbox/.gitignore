@@ -1,0 +1,13 @@
+/bin
+/cypress/videos
+/logs
+/node_modules
+/packages
+/public/typo3
+/public/typo3conf/ext
+/public/typo3conf/PackageStates.php
+/public/typo3temp
+/public/.htaccess
+/public/index.php
+/var
+/vendor

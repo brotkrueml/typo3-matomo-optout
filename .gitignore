@@ -1,6 +1,5 @@
 .Build
 .idea
 .php_cs.cache
-Build/node_modules
 composer.lock
 *GENERATED*
