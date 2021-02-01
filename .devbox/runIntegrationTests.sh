@@ -23,7 +23,7 @@ nohup php -S localhost:8080 -t public/ > $DIR/phpd.log 2>&1 &
 PHP_SERVER_PID=$!
 
 echo "=== Run integration tests"
-yarn run cypress run
+yarn run cypress run --record --key $CYPRESS_IO_KEY
 
 echo "=== Stop PHP server"
 kill -3 $PHP_SERVER_PID

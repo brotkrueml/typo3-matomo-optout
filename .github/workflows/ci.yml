@@ -40,3 +40,5 @@ jobs:
         run: |
           cd .devbox
           ./runIntegrationTests.sh
+        env:
+          CYPRESS_IO_KEY: ${{ secrets.CYPRESS_IO_KEY }}
