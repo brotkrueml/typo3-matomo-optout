@@ -36,4 +36,6 @@ defined('TYPO3') || die();
     ];
 
     $GLOBALS['TCA']['tt_content']['types'] += $tempTypes;
+
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][Brotkrueml\MatomoOptout\Extension::PLUGIN_KEY] = 'ext-matomo_optout-ce';
 })();
