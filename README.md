@@ -7,3 +7,7 @@ TYPO3 content element for opting-out of Matomo analytics.
 [![Crowdin](https://badges.crowdin.net/typo3-extension-matomooptout/localized.svg)](https://crowdin.com/project/typo3-extension-matomooptout)
 
 The extension supports TYPO3 v10 LTS and TYPO3 v11.
+
+[Documentation](https://docs.typo3.org/p/brotkrueml/typo3-matomo-optout/master/en-us/) |
+[Translation](https://crowdin.com/project/typo3-extension-matomooptout) |
+[Extension in TER](https://extensions.typo3.org/extension/matomo_optout/)
