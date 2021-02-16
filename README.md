@@ -10,4 +10,5 @@ The extension supports TYPO3 v10 LTS and TYPO3 v11.
 
 [Documentation](https://docs.typo3.org/p/brotkrueml/typo3-matomo-optout/master/en-us/) |
 [Translation](https://crowdin.com/project/typo3-extension-matomooptout) |
+[Changelog](https://github.com/brotkrueml/typo3-matomo-optout/blob/master/CHANGELOG.md) |
 [Extension in TER](https://extensions.typo3.org/extension/matomo_optout/)

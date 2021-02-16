@@ -5,6 +5,7 @@
 /.github export-ignore
 /.gitignore export-ignore
 /.php_cs export-ignore
+/CHANGELOG.md export-ignore
 /Documentation/ export-ignore
 /Resources/Private/JavaScript/ export-ignore
 /README.md
