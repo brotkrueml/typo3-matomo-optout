@@ -1,4 +1,4 @@
-/.crowdin.yml
+/.crowdin.yml export-ignore
 /.devbox export-ignore
 /.editorconfig export-ignore
 /.gitattributes export-ignore
@@ -8,4 +8,4 @@
 /CHANGELOG.md export-ignore
 /Documentation/ export-ignore
 /Resources/Private/JavaScript/ export-ignore
-/README.md
+/README.md export-ignore
