@@ -17,7 +17,7 @@ defined('TYPO3') || die();
             'EXT:' . Brotkrueml\MatomoOptout\Extension::KEY . '/Resources/Public/Icons/content-element.svg',
             'special',
         ],
-        'CType',
+        TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
         Brotkrueml\MatomoOptout\Extension::KEY
     );
 
