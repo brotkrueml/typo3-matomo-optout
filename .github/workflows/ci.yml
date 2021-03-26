@@ -1,6 +1,14 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore:
+      - 'Documentation/**'
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - 'Documentation/**'
+      - '**.md'
 
 jobs:
   build:
@@ -42,3 +50,20 @@ jobs:
           ./runIntegrationTests.sh
         env:
           CYPRESS_IO_KEY: ${{ secrets.CYPRESS_IO_KEY }}
+  xliff-validation:
+    name: XLIFF validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - name: Install package
+        run: |
+          sudo apt-get -y install libxml2-utils
+      - name: Download XSD
+        run: |
+          curl --no-progress-meter -O https://docs.oasis-open.org/xliff/v1.2/cs02/xliff-core-1.2-strict.xsd
+      - name: Validate XLIFF files
+        run: |
+          xmllint --schema xliff-core-1.2-strict.xsd --noout Resources/Private/Language/*.xlf
