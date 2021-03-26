@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:matomo_optout/Resources/Private/Language/locallang.xlf" date="2021-01-25T10:08:12Z">
+<?xml version="1.0" encoding="utf-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:matomo_optout/Resources/Private/Language/locallang.xlf" date="2021-01-25T10:08:12Z" product-name="matomo_optout">
 		<body>
 			<trans-unit id="introduction" resname="introduction">
 				<source><![CDATA[You may choose to prevent this website from aggregating and analyzing the actions you take here. Doing so will protect your privacy, but will also prevent the owner from learning from your actions and creating a better experience for you and other users.]]></source>
