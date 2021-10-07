@@ -19,14 +19,10 @@ Matomo Opt-Out
    typo3 (at) krue (dot) ml
 
 :Slack:
-   chris on `typo3.slack.com <https://typo3.slack.com>`_
-
-:Twitter:
-   `@brotkrueml <https://twitter.com/brotkrueml>`_
+   Channel `#matomo`_ on `typo3.slack.com`_
 
 :License:
-   This extension documentation is published under the
-   `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`_
+   This extension documentation is published under the `CC BY-NC-SA 4.0`_
    (Creative Commons) license
 
 The extension provides a content element for opting-out of Matomo analytics.
@@ -38,14 +34,13 @@ The extension provides a content element for opting-out of Matomo analytics.
 **TYPO3**
 
 The content of this document is related to TYPO3 CMS, a GNU/GPL CMS/Framework
-available from `typo3.org <https://typo3.org/>`_.
+available from `typo3.org`_.
 
 **Extension Manual**
 
 This documentation is for the TYPO3 extension matomo_optout.
 
-If you find an error or something is missing, please:
-`Report a Problem <https://github.com/brotkrueml/typo3-matomo-optout/issues/new>`_.
+If you find an error or something is missing, please: `Report a Problem`_.
 
 **For Contributors**
 
@@ -62,3 +57,10 @@ button on the top right to submit your change request.
    Installation/Index
    Configuration/Index
    Sitemap
+
+
+.. _#matomo: https://typo3.slack.com/archives/C02GX6W4ASH
+.. _CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/
+.. _Report a Problem: https://github.com/brotkrueml/typo3-matomo-optout/issues/new
+.. _typo3.slack.com: https://typo3.slack.com/
+.. _typo3.org: https://typo3.org/
