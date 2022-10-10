@@ -21,7 +21,7 @@ Installation via composer
 #. Add a dependency ``brotkrueml/typo3-matomo-optout`` to your project's
    :file:`composer.json` file to install the current stable version:
 
-   .. code-block:: shell
+   .. code-block:: bash
 
       composer req brotkrueml/typo3-matomo-optout
 

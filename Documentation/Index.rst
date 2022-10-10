@@ -6,51 +6,38 @@
 Matomo Opt-Out
 ==============
 
+:Extension key:
+   matomo_optout
+
+:Package name:
+   brotkrueml/typo3-matomo-optout
+
 :Version:
    |release|
 
 :Language:
    en
 
-:Authors:
+:Author:
    Chris Müller
 
-:Email:
-   typo3 (at) krue (dot) ml
-
-:Slack:
-   Channel `#matomo`_ on `typo3.slack.com`_
-
 :License:
-   This extension documentation is published under the `CC BY-NC-SA 4.0`_
-   (Creative Commons) license
+   This document is published under the `Creative Commons BY 4.0`_ license.
+
+:Rendered:
+   |today|
+
+----
 
 The extension provides a content element for opting-out of Matomo analytics.
 
-.. rst-class:: horizbuttons-tip-xxl
+----
 
-- :ref:`Sitemap`
-
-**TYPO3**
-
-The content of this document is related to TYPO3 CMS, a GNU/GPL CMS/Framework
-available from `typo3.org`_.
-
-**Extension Manual**
-
-This documentation is for the TYPO3 extension matomo_optout.
-
-If you find an error or something is missing, please: `Report a Problem`_.
-
-**For Contributors**
-
-You are welcome to help improve this guide. Just click the "Edit on GitHub"
-button on the top right to submit your change request.
+**Table of Contents:**
 
 .. toctree::
-   :maxdepth: 3
-   :hidden:
-
+   :maxdepth: 2
+   :titlesonly:
 
    Introduction/Index
    Editor/Index
@@ -60,7 +47,7 @@ button on the top right to submit your change request.
 
 
 .. _#matomo: https://typo3.slack.com/archives/C02GX6W4ASH
-.. _CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/
+.. _Creative Commons BY 4.0: https://creativecommons.org/licenses/by/4.0/
 .. _Report a Problem: https://github.com/brotkrueml/typo3-matomo-optout/issues/new
 .. _typo3.slack.com: https://typo3.slack.com/
 .. _typo3.org: https://typo3.org/

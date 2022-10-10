@@ -19,7 +19,7 @@ The opt-out form is based on a JavaScript solution described in the
 `Matomo documentation <https://developer.matomo.org/guides/tracking-javascript-guide#optional-creating-a-custom-opt-out-form>`_.
 
 .. tip::
-   If you use Matomo, the :ref:`Matomo Widgets <matomo_widgets:introduction>`
+   If you use Matomo, the :ref:`Matomo Widgets <ext_matomo_widgets:introduction>`
    extension might be of interest to you.
 
 
