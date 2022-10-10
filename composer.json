@@ -21,8 +21,8 @@
 	],
     "require": {
 		"php": ">=7.2",
-        "typo3/cms-core": "^10.4.11 || ^11.0",
-		"typo3/cms-fluid-styled-content": "*"
+        "typo3/cms-core": "^10.4.11 || ^11.5",
+		"typo3/cms-fluid-styled-content": "^10.4.11 || ^11.5"
     },
 	"require-dev": {
         "friendsofphp/php-cs-fixer": "^2.19",
