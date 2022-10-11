@@ -10,6 +10,7 @@
 		}
 	],
 	"support": {
+		"docs": "https://docs.typo3.org/p/brotkrueml/typo3-matomo-optout/main/en-us/",
 		"issues": "https://github.com/brotkrueml/typo3-matomo-optout/issues",
 		"source": "https://github.com/brotkrueml/typo3-matomo-optout"
 	},
