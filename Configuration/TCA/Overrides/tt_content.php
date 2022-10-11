@@ -9,7 +9,7 @@
 
 defined('TYPO3') || die();
 
-(function () {
+(static function () {
     TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
         [
             Brotkrueml\MatomoOptout\Extension::LANGUAGE_PATH_CONTENT_ELEMENT . ':title',
