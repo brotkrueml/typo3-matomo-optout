@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [[ $# -eq 0 ]]; then
-    echo "No TYPO3 version supplied, possible values: [10, 11]"
+    echo "No TYPO3 version supplied, possible values: [10, 11, 12]"
     exit 1
 fi
 
-if [[ "$1" != "10" && "$1" != "11" ]]; then
-    echo "No valid TYPO3 version supplied, possible values: [10, 11]"
+if [[ "$1" != "10" && "$1" != "11" && "$1" != "12" ]]; then
+    echo "No valid TYPO3 version supplied, possible values: [10, 11, 12]"
     exit 1
 fi
 
@@ -23,8 +23,10 @@ fi
 rm -f $DB_FILE
 sqlite3 $DB_FILE < $DIR/db/matomo_optout_v"$TYPO3_VERSION".sql
 
-echo "=== Copy TYPO3 settings"
-cp public/typo3conf/LocalConfiguration_v"$TYPO3_VERSION".php public/typo3conf/LocalConfiguration.php
+if [[ "$TYPO3_VERSION" -lt "12" ]]; then
+    echo "=== Copy TYPO3 settings"
+    cp public/typo3conf/LocalConfiguration_v"$TYPO3_VERSION".php public/typo3conf/LocalConfiguration.php
+fi
 
 echo "=== Install composer dependencies"
 rm -f composer.lock
@@ -34,8 +36,8 @@ case $TYPO3_VERSION in
         composer update --no-progress --prefer-dist --optimize-autoloader
         vendor/bin/typo3cms install:generatepackagestates
         ;;
-    11)
-        composer require typo3/cms-core:^11 --no-update
+    default)
+        composer require typo3/cms-core:^"$TYPO3_VERSION" --no-update
         composer update --no-progress --prefer-dist --optimize-autoloader
         vendor/bin/typo3 extension:setup
         ;;
@@ -55,5 +57,7 @@ yarn run cypress run
 echo "=== Stop PHP server"
 kill -3 $PHP_SERVER_PID
 
-echo "=== Remove copied TYPO3 settings"
-rm -f public/typo3conf/LocalConfiguration.php
+if [[ "$TYPO3_VERSION" -lt "12" ]]; then
+    echo "=== Remove copied TYPO3 settings"
+    rm -f public/typo3conf/LocalConfiguration.php
+fi

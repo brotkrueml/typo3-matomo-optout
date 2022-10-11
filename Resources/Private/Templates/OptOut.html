@@ -3,9 +3,9 @@
 <f:layout name="Default"/>
 
 <f:section name="Main">
-    <p id="moo-no-tracking"><strong><f:translate key="noTracking"/></strong></p>
-    <div style="display: none;" id="moo-optout-form" data-opted-out-text="<f:translate key='optedOut'/>" data-opted-in-text="<f:translate key='optedIn'/>">
-        <p><f:translate key="introduction"/></p>
+    <p id="moo-no-tracking"><strong><f:translate key="noTracking" extensionName="matomo_optout"/></strong></p>
+    <div style="display: none;" id="moo-optout-form" data-opted-out-text="{f:translate(key: 'optedOut', extensionName: 'matomo_optout')}" data-opted-in-text="{f:translate(key: 'optedIn', extensionName='matomo_optout')}">
+        <p><f:translate key="introduction" extensionName="matomo_optout"/></p>
         <p>
             <input type="checkbox" id="moo-optout">
             <label for="moo-optout"><strong></strong></label>

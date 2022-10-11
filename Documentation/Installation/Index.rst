@@ -10,7 +10,8 @@ Target group: **Administrators**
 
 .. note::
 
-   The extension supports TYPO3 v10 LTS and TYPO3 v11 LTS.
+   The extension in version |version| supports TYPO3 v10 LTS, TYPO3 v11 LTS and
+   TYPO3 v12.
 
 
 .. _installation-composer:
