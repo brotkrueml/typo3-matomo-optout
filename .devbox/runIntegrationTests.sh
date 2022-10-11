@@ -53,6 +53,7 @@ PHP_SERVER_PID=$!
 
 echo "=== Run integration tests"
 yarn run cypress run
+CYPRESS_EXIT_CODE=$?
 
 echo "=== Stop PHP server"
 kill -3 $PHP_SERVER_PID
@@ -61,3 +62,5 @@ if [[ "$TYPO3_VERSION" -lt "12" ]]; then
     echo "=== Remove copied TYPO3 settings"
     rm -f public/typo3conf/LocalConfiguration.php
 fi
+
+exit $CYPRESS_EXIT_CODE
