@@ -1,60 +1,62 @@
 {
     "name": "brotkrueml/typo3-matomo-optout",
     "description": "TYPO3 content element for opting-out of Matomo analytics",
-    "type": "typo3-cms-extension",
     "license": "GPL-2.0-or-later",
-	"authors": [
-		{
-			"name": "Chris Müller",
-			"role": "Developer"
-		}
-	],
-	"support": {
-		"docs": "https://docs.typo3.org/p/brotkrueml/typo3-matomo-optout/main/en-us/",
-		"issues": "https://github.com/brotkrueml/typo3-matomo-optout/issues",
-		"source": "https://github.com/brotkrueml/typo3-matomo-optout"
-	},
-	"keywords": [
-		"TYPO3 CMS",
-		"TYPO3 extension",
-		"Matomo",
-		"GDPR"
-	],
-    "require": {
-		"php": ">=7.2",
-        "typo3/cms-core": "^10.4.11 || ^11.5",
-		"typo3/cms-fluid-styled-content": "^10.4.11 || ^11.5"
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3 CMS",
+        "TYPO3 extension",
+        "Matomo",
+        "GDPR"
+    ],
+    "authors": [
+        {
+            "name": "Chris Müller",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/brotkrueml/typo3-matomo-optout/issues",
+        "source": "https://github.com/brotkrueml/typo3-matomo-optout",
+        "docs": "https://docs.typo3.org/p/brotkrueml/typo3-matomo-optout/main/en-us/"
     },
-	"require-dev": {
-        "brotkrueml/coding-standards": "~2.0.2"
+    "require": {
+        "php": ">=7.2",
+        "typo3/cms-core": "^10.4.11 || ^11.5",
+        "typo3/cms-fluid-styled-content": "^10.4.11 || ^11.5"
+    },
+    "require-dev": {
+        "brotkrueml/coding-standards": "~2.0.2",
+        "ergebnis/composer-normalize": "~2.28.3"
     },
     "autoload": {
         "psr-4": {
             "Brotkrueml\\MatomoOptout\\": "Classes"
         }
     },
-	"config": {
-		"sort-packages": true,
-		"vendor-dir": ".Build/vendor",
-		"bin-dir": ".Build/bin",
+    "config": {
         "allow-plugins": {
             "typo3/class-alias-loader": true,
-            "typo3/cms-composer-installers": true
-        }
-	},
+            "typo3/cms-composer-installers": true,
+            "ergebnis/composer-normalize": true
+        },
+        "bin-dir": ".Build/bin",
+        "sort-packages": true,
+        "vendor-dir": ".Build/vendor"
+    },
     "extra": {
-		"branch-alias": {
-			"dev-main": "1.1.x-dev"
-		},
+        "branch-alias": {
+            "dev-main": "1.1.x-dev"
+        },
         "typo3/cms": {
+            "app-dir": ".Build",
             "extension-key": "matomo_optout",
-			"app-dir": ".Build",
-			"web-dir": ".Build/web"
+            "web-dir": ".Build/web"
         }
     },
-	"scripts": {
-		"build-js": ".devbox/node_modules/.bin/uglifyjs --compress --mangle --output Resources/Public/JavaScript/matomo_optout.js Resources/Private/JavaScript/matomo_optout.js",
-		"fix-cs": ".Build/bin/php-cs-fixer fix",
-		"zip": "grep -Po \"(?<='version' => ')([0-9]+\\.[0-9]+\\.[0-9]+)\" ext_emconf.php | xargs -I {version} sh -c 'mkdir -p ../zip; git archive -v -o \"../zip/${PWD##*/}_{version}.zip\" v{version}'"
-	}
+    "scripts": {
+        "build-js": ".devbox/node_modules/.bin/uglifyjs --compress --mangle --output Resources/Public/JavaScript/matomo_optout.js Resources/Private/JavaScript/matomo_optout.js",
+        "fix-cs": ".Build/bin/php-cs-fixer fix",
+        "zip": "grep -Po \"(?<='version' => ')([0-9]+\\.[0-9]+\\.[0-9]+)\" ext_emconf.php | xargs -I {version} sh -c 'mkdir -p ../zip; git archive -v -o \"../zip/${PWD##*/}_{version}.zip\" v{version}'"
+    }
 }
