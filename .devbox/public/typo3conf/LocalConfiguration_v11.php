@@ -3,8 +3,7 @@ return [
     'BE' => [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$Qi5lNUlScHJmMkowMWc3Mw$9EPtTofMJwIdsidgx4KYkmmqWXc9IerpPBLLa1DkUtw',
-        'loginSecurityLevel' => 'normal',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$MkF0MWQyaGtZUE50aFVrLw$KFJm2OFi9ejUjm6sT/lG+Xn3F//zDMPDfasvzN2LIbc',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -15,7 +14,7 @@ return [
             'Default' => [
                 'charset' => 'utf8',
                 'driver' => 'pdo_sqlite',
-                'path' => __DIR__ . '/../../var/sqlite/matomo_optout.db',
+                'path' => '/home/chris/Projects/matomo_optout/.devbox/var/sqlite/matomo_optout.db',
             ],
         ],
     ],
@@ -27,6 +26,7 @@ return [
             'loginFootnote' => '',
             'loginHighlightColor' => '',
             'loginLogo' => '',
+            'loginLogoAlt' => '',
         ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
@@ -67,7 +67,7 @@ return [
     ],
     'MAIL' => [
         'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/local/bin/mailhog sendmail test@example.org --smtp-addr 127.0.0.1:1025',
+        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
@@ -82,43 +82,39 @@ return [
                 'imagesizes' => [
                     'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
-                        'compression' => 1,
+                        'compression' => true,
                     ],
                 ],
                 'pages' => [
                     'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
-                        'compression' => 1,
+                        'compression' => true,
                     ],
                 ],
                 'pagesection' => [
                     'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
-                        'compression' => 1,
+                        'compression' => true,
                     ],
                 ],
                 'rootline' => [
                     'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
-                        'compression' => 1,
+                        'compression' => true,
                     ],
                 ],
             ],
         ],
         'devIPmask' => '',
         'displayErrors' => 0,
-        'encryptionKey' => '27982f725f124a52c18a0408328004b8eb44eccf5215fff5e9e2fb16f6ad15747277d9c890ebae8dfae8de307a06f506',
+        'encryptionKey' => '6cfb8262334ae61536f5c04582c8b4a101abfa9842c449c941817cc2940095d383a236863e59dcfcef5a71db211f9586',
         'exceptionalErrors' => 4096,
         'features' => [
-            'felogin.extbase' => true,
-            'fluidBasedPageModule' => true,
-            'rearrangedRedirectMiddlewares' => true,
-            'unifiedPageTranslationHandling' => true,
+            'yamlImportsFollowDeclarationOrder' => true,
         ],
-        'sitename' => 'Matomo Opt-Out',
+        'sitename' => 'Matomo Opt-Out v11',
         'systemMaintainers' => [
             1,
         ],
-        'trustedHostsPattern' => '.*',
     ],
 ];

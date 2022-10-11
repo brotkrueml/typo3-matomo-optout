@@ -41,6 +41,16 @@ jobs:
   integration-tests:
     name: Integration tests
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - php-versions: '7.2'
+            typo3-versions: '10'
+          - php-versions: '7.4'
+            typo3-versions: '11'
+          - php-versions: '8.1'
+            typo3-versions: '11'
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -49,11 +59,11 @@ jobs:
       - name: Setup PHP version
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 7.4
+          php-version: ${{ matrix.php-versions }}
       - name: Run integration tests
         run: |
           cd .devbox
-          ./runIntegrationTests.sh
+          ./runIntegrationTests.sh ${{ matrix.typo3-versions }}
         env:
           CYPRESS_IO_KEY: ${{ secrets.CYPRESS_IO_KEY }}
   xliff-validation:
