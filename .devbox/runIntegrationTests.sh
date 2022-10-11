@@ -36,7 +36,7 @@ case $TYPO3_VERSION in
         composer update --no-progress --prefer-dist --optimize-autoloader
         vendor/bin/typo3cms install:generatepackagestates
         ;;
-    default)
+    *)
         composer require typo3/cms-core:^"$TYPO3_VERSION" --no-update
         composer update --no-progress --prefer-dist --optimize-autoloader
         vendor/bin/typo3 extension:setup
