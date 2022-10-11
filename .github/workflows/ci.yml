@@ -52,8 +52,6 @@ jobs:
           - php-versions: '7.4'
             typo3-versions: '11'
           - php-versions: '8.1'
-            typo3-versions: '11'
-          - php-versions: '8.1'
             typo3-versions: '12'
     steps:
       - name: Check out repository
