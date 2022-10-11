@@ -44,7 +44,7 @@
 	},
     "extra": {
 		"branch-alias": {
-			"dev-master": "1.1.x-dev"
+			"dev-main": "1.1.x-dev"
 		},
         "typo3/cms": {
             "extension-key": "matomo_optout",
