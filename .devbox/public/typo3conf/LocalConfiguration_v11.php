@@ -14,7 +14,7 @@ return [
             'Default' => [
                 'charset' => 'utf8',
                 'driver' => 'pdo_sqlite',
-                'path' => '/home/chris/Projects/matomo_optout/.devbox/var/sqlite/matomo_optout.db',
+                'path' => __DIR__ . '/../../var/sqlite/matomo_optout.db',
             ],
         ],
     ],
