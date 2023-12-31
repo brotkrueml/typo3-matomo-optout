@@ -1,15 +1,16 @@
 # Matomo Opt-Out
 
-TYPO3 content element for opting-out of Matomo analytics.
+> This extension is no longer maintained. It uses the iframe-based form
+> which has become increasingly problematic due to browser changes and
+> restrictions on setting third-party cookies.
+>
+> More information:
+> [Introducing improvements to the opt-out form feature](https://matomo.org/blog/2022/09/improvements-to-matomo-opt-out-form-feature/).
 
-[![CI Status](https://github.com/brotkrueml/typo3-matomo-optout/workflows/CI/badge.svg?branch=master)](https://github.com/brotkrueml/typo3-matomo-optout/actions?query=workflow%3ACI)
-[![Matomo Opt-Out](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/he8zah/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/he8zah/runs)
-[![Crowdin](https://badges.crowdin.net/typo3-extension-matomooptout/localized.svg)](https://crowdin.com/project/typo3-extension-matomooptout)
+TYPO3 content element for opting-out of Matomo analytics.
 
 The extension supports TYPO3 v10 LTS, TYPO3 v11 LTS and TYPO3 v12.
 
-[Documentation](https://docs.typo3.org/p/brotkrueml/typo3-matomo-optout/master/en-us/) |
-[Translation](https://crowdin.com/project/typo3-extension-matomooptout) |
+[Documentation](https://docs.typo3.org/p/brotkrueml/typo3-matomo-optout/main/en-us/) |
 [Changelog](https://github.com/brotkrueml/typo3-matomo-optout/blob/master/CHANGELOG.md) |
 [Extension in TER](https://extensions.typo3.org/extension/matomo_optout/) |
-[Slack #matomo](https://typo3.slack.com/archives/C02GX6W4ASH)

@@ -33,3 +33,10 @@
 .. By default, code blocks use PHP syntax highlighting
 
 .. highlight:: php
+
+.. attention::
+   This extension is no longer maintained. It uses the iframe-based form which has become increasingly
+   problematic due to browser changes and restrictions on setting third-party cookies.
+
+   More information:
+   `Introducing improvements to the opt-out form feature <https://matomo.org/blog/2022/09/improvements-to-matomo-opt-out-form-feature/>`__.

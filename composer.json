@@ -16,14 +16,13 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/brotkrueml/typo3-matomo-optout/issues",
         "source": "https://github.com/brotkrueml/typo3-matomo-optout",
         "docs": "https://docs.typo3.org/p/brotkrueml/typo3-matomo-optout/main/en-us/"
     },
     "require": {
         "php": ">=7.2",
-        "typo3/cms-core": "^10.4.11 || ^11.5 || ^12.0",
-        "typo3/cms-fluid-styled-content": "^10.4.11 || ^11.5 || ^12.0"
+        "typo3/cms-core": "^10.4.11 || ^11.5 || ^12.4",
+        "typo3/cms-fluid-styled-content": "^10.4.11 || ^11.5 || ^12.4"
     },
     "require-dev": {
         "brotkrueml/coding-standards": "~2.0.2",
@@ -46,7 +45,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "1.1.x-dev"
+            "dev-main": "1.2.x-dev"
         },
         "typo3/cms": {
             "app-dir": ".Build",
